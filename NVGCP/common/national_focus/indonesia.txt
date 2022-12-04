@@ -1,0 +1,1591 @@
+focus_tree = {
+	
+	id = INS_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			original_tag = INS
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2000 }
+    ###################################
+    ###                             ###
+    ### indonesia indonesia  		###
+    ###                             ###
+    ###################################
+
+    focus = {
+        id = INS_EconomyFirst
+        icon = money
+        x = 11
+        y = -2
+        cost = 10
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_EncourageForeignInvestment
+        icon = industry_democratic
+        x = 6
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ChineseInvestment
+        icon = trade_with_china
+        x = 7
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_EncourageForeignInvestment }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_AmericanInvestment
+        icon = trade_with_america
+        x = 5
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_EncourageForeignInvestment }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_IncreaseTradeWithAsean
+        icon = generic_asean_flag
+        x = 7
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_ChineseInvestment }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_OurBigBrother
+        icon = trade_with_japan
+        x = 5
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_AmericanInvestment }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ImproveOurInfrastructure
+        icon = infrastructure
+        x = 6
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_OurBigBrother }
+		prerequisite = { focus = INS_IncreaseTradeWithAsean}
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_buildTheTransJavaHighway
+        icon = infrastructure
+        x = 6
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_ImproveOurInfrastructure }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ImproveJakartaDockyards
+        icon = naval_dockyards
+        x = 6
+        y = 4
+        cost = 10
+		prerequisite = { focus = INS_buildTheTransJavaHighway }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ExpandOurAgriculture
+        icon = agriculture
+        x = 2
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ExportMorePalmOil
+        icon = agriculture
+        x = 1
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_ExpandOurAgriculture }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MoreLandForFarmers
+        icon = agriculture
+        x = 3
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_ExpandOurAgriculture }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_CombatDeforestation
+        icon = agriculture
+        x = 1
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_ExportMorePalmOil }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PreventPlantationFires
+        icon = agriculture
+        x = 3
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_MoreLandForFarmers }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_AgriculturalBoom
+        icon = agriculture
+        x = 2
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_PreventPlantationFires }
+		prerequisite = { focus = INS_CombatDeforestation }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FundEducation
+        icon = research
+        x = 10
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ModerniseTheSchools
+        icon = computer
+        x = 9
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_FundEducation }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PromoteForeignExchange
+        icon = computer
+        x = 11
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_FundEducation }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PromoteForeignExchange
+        icon = computer
+        x = 11
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_FundEducation }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FundInstitutions
+        icon = scientific_exchange
+        x = 9
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_ModerniseTheSchools }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TechnologicalDevelopment
+        icon = scientific_exchange
+        x = 9
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_FundInstitutions }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_SupportTheFutureGeneration
+        icon = scientific_exchange
+        x = 11
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_PromoteForeignExchange }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_BetterTeachersForOurStudents
+        icon = scientific_exchange
+        x = 11
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_SupportTheFutureGeneration }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_EducationForAllIndonesians
+        icon = scientific_exchange
+        x = 10
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_BetterTeachersForOurStudents }
+		prerequisite = { focus = INS_TechnologicalDevelopment }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_IndustrialBuildUp
+        icon = industry_civilian
+        x = 15
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FactoriesInJava
+        icon = industry_democratic2
+        x = 13
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_IndustrialBuildUp }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FactoriesInSumatra
+        icon = industry_democratic2
+        x = 15
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_IndustrialBuildUp }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }	
+	focus = {
+        id = INS_FactoriesInBorneo
+        icon = industry_democratic2
+        x = 17
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_IndustrialBuildUp }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FactoriesInSulawesi
+        icon = industry_democratic2
+        x = 17
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_FactoriesInBorneo }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FactoriesInTheMoluccas
+        icon = industry_democratic2
+        x = 15
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_FactoriesInSumatra }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FactoriesInTheLesserSundaIsles
+        icon = industry_democratic2
+        x = 13
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_FactoriesInJava }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_CombatCorruption
+        icon = industry_democratic2
+        x = 14
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_FactoriesInTheLesserSundaIsles }
+		prerequisite = { focus = INS_FactoriesInTheMoluccas }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_OurLargeLaborPool
+        icon = growing_population
+        x = 16
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_FactoriesInSulawesi }
+		prerequisite = { focus = INS_FactoriesInTheMoluccas }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_RepayOurDebts
+        icon = united_states_dollar
+        x = 15
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_OurLargeLaborPool }
+		prerequisite = { focus = INS_CombatCorruption }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_AnIndustrialPowerhouse
+        icon = industry_democratic2
+        x = 15
+        y = 4
+        cost = 10
+		prerequisite = { focus = INS_RepayOurDebts }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_DevelopOurInfrastructure
+        icon = infrastructure
+        x = 21
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_RebuildTheRoads
+        icon = infrastructure
+        x = 21
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_DevelopOurInfrastructure }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ARailWayAcrossJava
+        icon = construct_infrastructure
+        x = 21
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_RebuildTheRoads }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FocusOnJava
+        icon = industry_democratic2
+        x = 20
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_ARailWayAcrossJava }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_InfrastructureAcrossIndonesia
+        icon = industry_democratic2
+        x = 22
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_ARailWayAcrossJava }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_KickstartTheMRTProject
+        icon = industry_democratic2
+        x = 20
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_FocusOnJava }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_KickstartTransSumatraTollRoad
+        icon = industry_democratic2
+        x = 22
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_InfrastructureAcrossIndonesia }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_SaveJakartaFromFlooding
+        icon = industry_democratic2
+        x = 21
+        y = 4
+        cost = 10
+		prerequisite = { focus = INS_KickstartTheMRTProject }
+		prerequisite = { focus = INS_KickstartTransSumatraTollRoad }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MillitaryIndustrialComplex
+        icon = industry_military
+        x = 25
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_EconomyFirst }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MillitaryFactoriesinjava
+        icon = industry_military
+        x = 23
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_MillitaryIndustrialComplex }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MillitaryFactoriesinSumatra
+        icon = industry_military
+        x = 25
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_MillitaryIndustrialComplex }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MillitaryFactoriesinborneo
+        icon = industry_military
+        x = 27
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_MillitaryIndustrialComplex }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MillitaryFactoryInvestments
+        icon = industry_military
+        x = 25
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_MillitaryFactoriesinborneo }
+		prerequisite = { focus = INS_MillitaryFactoriesinjava }
+		prerequisite = { focus = INS_MillitaryFactoriesinSumatra }
+		
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ExpandTheMillitary
+        icon = infantry_allies
+        x = 36
+        y = -2
+        cost = 10
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TNI
+        icon = army_doctrine
+        x = 32
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_ExpandTheMillitary }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TechnologicalSupremacy
+        icon = army_doctrine
+        x = 34
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNI }
+		mutually_exclusive = { focus = INS_SpeedWinsWars }
+		mutually_exclusive = { focus = INS_ExtensivePlanning }
+		mutually_exclusive = { focus = INS_UseOurManpowerToOurAdvantage }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_SpeedWinsWars
+        icon = army_doctrine
+        x = 30
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNI }
+		mutually_exclusive = { focus = INS_TechnologicalSupremacy }
+		mutually_exclusive = { focus = INS_ExtensivePlanning }
+		mutually_exclusive = { focus = INS_UseOurManpowerToOurAdvantage }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_UseOurManpowerToOurAdvantage
+        icon = Army_Mobilization
+        x = 42
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNI }
+		mutually_exclusive = { focus = INS_SpeedWinsWars }
+		mutually_exclusive = { focus = INS_TechnologicalSupremacy }
+		mutually_exclusive = { focus = INS_ExtensivePlanning }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ExtensivePlanning
+        icon = planning_bonus
+        x = 38
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNI }
+		mutually_exclusive = { focus = INS_SpeedWinsWars }
+		mutually_exclusive = { focus = INS_TechnologicalSupremacy }
+		mutually_exclusive = { focus = INS_UseOurManpowerToOurAdvantage }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_StrategySchool
+        icon = army_doctrine
+        x = 38
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_ExtensivePlanning }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ImproveCommunications
+        icon = artillery_regiments
+        x = 38
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_StrategySchool }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ImproveOurArtillery
+        icon = army_doctrine
+        x = 34
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_TechnologicalSupremacy }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MaximumFirepower
+        icon = army_doctrine
+        x = 34
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_ImproveOurArtillery		}
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ModernTankModels
+        icon = focus_generic_foward_tank
+        x = 30
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_SpeedWinsWars		}
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MotorizationProgram
+        icon = army_doctrine
+        x = 30
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_ModernTankModels		}
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_StandardiseEquipment
+        icon = small_arms
+        x = 42
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_UseOurManpowerToOurAdvantage		}
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_MobiliseTheMasses
+        icon = small_arms
+        x = 42
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_StandardiseEquipment		}
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_RecruitmentProgram
+        icon = small_arms
+        x = 40
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_UseOurManpowerToOurAdvantage focus = INS_ExtensivePlanning	}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ModernizeRifles
+        icon = small_arms
+        x = 32
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_TechnologicalSupremacy focus = INS_SpeedWinsWars	}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TNIAngkatanUdara
+        icon = airforce
+        x = 47
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_ExpandTheMillitary}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TNIAngkatanUdara
+        icon = small_arms
+        x = 47
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_ExpandTheMillitary}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TNIAngkatanLaut
+        icon = navy
+        x = 54
+        y = -1
+        cost = 10
+		prerequisite = { focus = INS_ExpandTheMillitary}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PurchaseAmericanFighters
+        icon = small_arms
+        x = 45
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNIAngkatanUdara}
+		
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PurchaseChineseBombers
+        icon = small_arms
+        x = 49
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNIAngkatanUdara}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_BuildAirBases
+        icon = small_arms
+        x = 48
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_PurchaseChineseBombers focus = INS_PurchaseAmericanFighters}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_RecreateTheseAirwings
+        icon = small_arms
+        x = 46
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_PurchaseChineseBombers focus = INS_PurchaseAmericanFighters}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FocusOnGunningThemDown
+        icon = small_arms
+        x = 45
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_PurchaseAmericanFighters}
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_FocusOnBombingThemDown
+        icon = small_arms
+        x = 49
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_PurchaseChineseBombers
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+  }
+	focus = {
+        id = INS_CreateTheCN235
+        icon = small_arms
+        x = 47
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_RecreateTheseAirwings }
+		prerequisite = { focus = INS_BuildAirBases }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_GuardingOurCoasts
+        icon = small_arms
+        x = 55
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNIAngkatanLaut }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_DevelopDockyards
+        icon = small_arms
+        x = 53
+        y = 0
+        cost = 10
+		prerequisite = { focus = INS_TNIAngkatanLaut }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_StarveTheirWarEffort
+        icon = small_arms
+        x = 53
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_DevelopDockyards focus = INS_GuardingOurCoasts }
+		mutually_exclusive = { focus = INS_BuildCarriers }
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_BuildCarriers
+        icon = small_arms
+        x = 55
+        y = 1
+        cost = 10
+		prerequisite = { focus = INS_DevelopDockyards focus = INS_GuardingOurCoasts }
+		mutually_exclusive = { focus = INS_StarveTheirWarEffort }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_DevelopCorvettes
+        icon = small_arms
+        x = 54
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_BuildCarriers focus = INS_StarveTheirWarEffort }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_DevelopFrigates
+        icon = small_arms
+        x = 54
+        y = 3
+        cost = 10
+		prerequisite = { focus = INS_DevelopCorvettes }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_SubmarineDevelopment
+        icon = small_arms
+        x = 52
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_StarveTheirWarEffort }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_IndonesianCarrier
+        icon = small_arms
+        x = 56
+        y = 2
+        cost = 10
+		prerequisite = { focus = INS_BuildCarriers }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_DevelopDestroyers
+        icon = small_arms
+        x = 54
+        y = 4
+        cost = 10
+		prerequisite = { focus = INS_BuildCarriers }
+		
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TheAbdicationCrisis
+        icon = political_power_bonus
+        x = 23
+        y = 6
+        cost = 5
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ReshuffleTheCabinet
+        icon = political_power_bonus
+        x = 22
+        y = 7
+        cost = 5
+		prerequisite = { focus = INS_TheAbdicationCrisis }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_GainNahdlatulUlamaSupport
+        icon = political_power_bonus
+        x = 24
+        y = 7
+        cost = 5
+		prerequisite = { focus = INS_TheAbdicationCrisis }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ARequestToSBY
+        icon = political_power_bonus
+        x = 23
+        y = 8
+        cost = 5
+		prerequisite = { focus = INS_GainNahdlatulUlamaSupport }
+		prerequisite = { focus = INS_ReshuffleTheCabinet }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TheRemovalOfGusDur
+        icon = political_power_bonus
+        x = 18
+        y = 9
+        cost = 5
+		prerequisite = { focus = INS_ARequestToSBY }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_TheDissolvementOfTheDPR
+        icon = political_power_bonus
+        x = 28
+        y = 9
+        cost = 5
+		prerequisite = { focus = INS_ARequestToSBY }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_PoliticalRevolution
+        icon = political_power_bonus
+        x = 23
+        y = 9
+        cost = 5
+		prerequisite = { focus = INS_ARequestToSBY }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_ThePathToTrueDemocracy
+        icon = political_power_bonus
+		mutually_exclusive = { focus = INS_SeizePower }
+        x = 27
+        y = 10
+        cost = 5
+		prerequisite = { focus = INS_TheDissolvementOfTheDPR }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	focus = {
+        id = INS_SeizePower
+        icon = political_power_bonus
+		mutually_exclusive = { focus = INS_ThePathToTrueDemocracy }
+        x = 29
+        y = 10
+        cost = 5
+		prerequisite = { focus = INS_TheDissolvementOfTheDPR }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+		focus = {
+        id = INS_UnbanMarxismLeninism
+        icon = political_power_bonus
+        x = 27
+        y = 11
+        cost = 5
+		prerequisite = { focus = INS_TheDissolvementOfTheDPR }
+		
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+	
+
+
+}

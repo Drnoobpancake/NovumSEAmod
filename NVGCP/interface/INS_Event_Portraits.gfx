@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_MegawatiChosen"
+		texturefile = "gfx/event_pictures/report_event/Indonesia/MegawatiChosen.dds"
+	}
+	spriteType = {
+		name = "GFX_event_JusufChosen"
+		texturefile = "gfx/event_pictures/report_event/Indonesia/JusufChosen.dds"
+	}
+	spriteType = {
+		name = "GFX_event_GusDurWins
+		texturefile = "gfx/event_pictures/report_event/Indonesia/GusDurWins.dds"
+	}
+	spriteType = {
+		name = "GFX_event_GusDurWins
+		texturefile = "gfx/event_pictures/report_event/Indonesia/GusDurImpeached.dds"
+	}
+
+}

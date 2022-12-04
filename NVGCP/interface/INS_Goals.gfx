@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Goals_GusDurCrisis"
+		texturefile = "gfx/interface/goals/Indonesia/ImpeachmentCrisis.dds"
+	}
+
+
+}

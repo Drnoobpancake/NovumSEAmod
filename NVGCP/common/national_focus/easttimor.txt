@@ -1,0 +1,38 @@
+focus_tree = {
+	
+	id = ETI_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			original_tag = ETI
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2000 }
+    ###################################
+    ###                             ###
+    ### East Timor  		###
+    ###                             ###
+    ###################################
+
+    focus = {
+        id = ETI_RoadtoIndependence
+        icon = money
+        x = 11
+        y = -2
+        cost = 10
+
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            factor = 90
+        }
+    }
+
+
+}

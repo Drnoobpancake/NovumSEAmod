@@ -1,0 +1,78 @@
+﻿add_namespace = Indonesia
+add_namespace = IndoNews
+
+#GusdurImpeachment
+country_event = {
+	id = Indonesia.1
+	title = Indonesia.1.t
+	desc =  Indonesia.1.d
+	picture = GFX_report_event_kursk_sinking
+	
+	fire_only_once = yes
+
+	option = {	#Goodbye Gus Dur
+		name = indonesia.1.o
+			country_event = {
+				id = Indonesia.2
+			}
+		}
+	
+}
+
+
+#choose gus replacement
+country_event = {
+	id = Indonesia.2
+	title = Indonesia.2.t
+	desc =  Indonesia.2.d
+	picture = GFX_report_event_kursk_sinking
+	
+	fire_only_once = yes
+
+	option = {	#Megawati
+	    ai_chance = {
+            base = 60 
+        }
+		name = Indonesia.2.o
+		add_political_power = 20
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+			last_election = "2000.1.1"
+			election_frequency = 48
+		}
+		event IndoNews.1
+	}
+	option = {	#Jusuf Kalla
+	    ai_chance = {
+            base = 40 
+        }
+		name = Indonesia.2.o1
+		add_political_power = 20
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+			last_election = "2000.1.1"
+			election_frequency = 48
+		}
+	}
+}
+#gus dur doesnt get impeached
+country_event = {
+	id = Indonesia.3
+	title = Indonesia.3.t
+	desc =  Indonesia.3.d
+	picture = GFX_report_event_kursk_sinking
+	
+	fire_only_once = yes
+
+	option = {	#Goodbye Gus Dur
+		name = Indonesia.3.o
+		add_political_power = 50
+			}
+		}
+	}
+
+

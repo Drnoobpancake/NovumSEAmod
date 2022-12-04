@@ -1,0 +1,52 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_INS_Rizieq_large"
+		texturefile = "gfx/leaders/INS/muhammad_rizieq_shibab.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_Jusuf_Kalla_large"
+		texturefile = "gfx/leaders/INS/Jusuf_kalla.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_MaarufAmin"
+		texturefile = "gfx/leaders/INS/MaarufAmin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_Suharto"
+		texturefile = "gfx/leaders/INS/Suharto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_agustadisasongko"
+		texturefile = "gfx/leaders/INS/generals/agustadisasongko.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AndikaPerkasa"
+		texturefile = "gfx/leaders/INS/generals/AndikaPerkasa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_budiman"
+		texturefile = "gfx/leaders/INS/generals/budiman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_djokosantoso"
+		texturefile = "gfx/leaders/INS/generals/djokosantoso.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DudungAbdurachman"
+		texturefile = "gfx/leaders/INS/generals/DudungAbdurachman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_EndriartonoSutarto"
+		texturefile = "gfx/leaders/INS/generals/EndriartonoSutarto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pramonoedhie"
+		texturefile = "gfx/leaders/INS/generals/pramonoedhie.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_RyamizardRyacudu"
+		texturefile = "gfx/leaders/INS/generals/RyamizardRyacudu.dds"
+	}
+
+}
